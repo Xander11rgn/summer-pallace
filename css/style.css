@@ -52,7 +52,6 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  padding-left: 100px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -62,9 +61,10 @@ a {
 
 .header-logo {
   background: url("../img/logo.svg") 100% 100% no-repeat;
+  background-position: left;
   width: 160px;
   height: 87px;
-  margin-right: 235px;
+  margin-left: 100px;
 }
 
 .nav {
@@ -79,7 +79,7 @@ a {
       -ms-flex-align: center;
           align-items: center;
   text-transform: uppercase;
-  margin-right: 173px;
+  margin-left: 10%;
   height: 100%;
 }
 
@@ -142,6 +142,7 @@ a {
   height: -moz-max-content;
   height: max-content;
   cursor: pointer;
+  margin-left: 173px;
 }
 
 .line {
@@ -422,7 +423,10 @@ a {
 .gallery {
   height: 1230px;
   width: 100%;
-  padding: 120px 397px 150px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -430,9 +434,9 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .gal-top {
@@ -443,9 +447,9 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-bottom: 15px;
 }
 
@@ -467,15 +471,16 @@ a {
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
+  margin-right: 30px;
 }
 
 .gal-bottom {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .bottom-right {
@@ -686,11 +691,13 @@ a {
 }
 
 #msg {
+  min-width: 320px;
   padding-top: 15px;
   padding-left: 20px;
   margin-bottom: 35px;
   height: 196px;
   resize: none;
+  border: 0.5px solid #D0D0D0;
 }
 
 #submit {
@@ -845,4 +852,13 @@ a {
   content: '—';
   margin-left: 5px;
   margin-right: 5px;
+}
+
+@media (max-width: 1625px) {
+  .nav {
+    margin-left: 5%;
+  }
+  .first-screen-menu {
+    margin-left: 50px;
+  }
 }
