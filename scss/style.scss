@@ -41,7 +41,6 @@ a {
   flex-direction: row;
   // margin-left: 100px;
   // margin-right: 365px;
-  padding-left: 100px;
   align-items: center;
   vertical-align: middle;
   width: 100%;
@@ -49,9 +48,10 @@ a {
 
 .header-logo {
   background: url('../img/logo.svg') 100% 100% no-repeat;
+  background-position: left;
   width: 160px;
   height: 87px;
-  margin-right: 235px;
+  margin-left: 100px;
 }
 
 .nav {
@@ -59,7 +59,7 @@ a {
   flex-direction: row;
   align-items: center;
   text-transform: uppercase;
-  margin-right: 173px;
+  margin-left: 10%; //248px;
   height: 100%;
 }
 
@@ -109,6 +109,7 @@ a {
   width: 40px;
   height: max-content;
   cursor: pointer;
+  margin-left: 173px;
 }
 
 .line {
@@ -336,23 +337,24 @@ transition: all 0.3s;
 .gallery {
   height: 1230px;
   width: 100%;
-  padding: 120px 397px 150px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  
+  margin-bottom: auto;
+  // padding: 120px 397px 150px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .gal-top {
   
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   margin-bottom: 15px;
 }
-// .gal-top:last-child{
-//   margin-left: 30px;
-
-// }
 
 .gal-logo {
   margin-top: auto;
@@ -368,11 +370,12 @@ transition: all 0.3s;
 .gal-photo {
   width: max-content;
   height: max-content;
+  margin-right: 30px;
 }
 
 .gal-bottom {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .bottom-right {
@@ -511,17 +514,18 @@ transition: all 0.3s;
   outline: none;
 }
 
-
 #email {
   margin-bottom: 40px;
 }
 
 #msg {
+  min-width: 320px;
   padding-top: 15px;
   padding-left: 20px;
   margin-bottom: 35px;
   height: 196px;
   resize: none;
+  border: 0.5px solid #D0D0D0;
 }
 
 #submit {
@@ -638,4 +642,26 @@ transition: all 0.3s;
   content: '—';
   margin-left: 5px;
   margin-right: 5px;
+}
+
+@media(max-width:1625px){
+  .nav{
+    margin-left: 5%;
+    }
+    .first-screen-menu{
+    margin-left: 50px;
+
+    }
+}
+
+
+@media(max-width:1426px){
+  .nav{
+    // margin-left: 0;
+    // position: relative;
+    // left:0;
+    }
+  body, .container{
+    
+  }
 }
