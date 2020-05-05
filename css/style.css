@@ -8,6 +8,50 @@ a {
   text-decoration: none;
 }
 
+.my-message {
+  width: 300px;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  background-color: #F8F8F8;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid #07e5f5;
+  text-align: center;
+  font-size: 15px;
+  padding: 15px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+}
+
+.my-message-ok {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin-top: 7px;
+  border: 0;
+  -webkit-box-shadow: 0px 4px 10px 1px rgba(0, 0, 0, 0.59);
+          box-shadow: 0px 4px 10px 1px rgba(0, 0, 0, 0.59);
+  outline: none;
+}
+
+.my-message-ok:active {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
 .progressbar {
   position: fixed;
   width: 0%;
@@ -200,7 +244,9 @@ a {
   height: 8.5px;
 }
 
-.left-control:hover, .right-control:hover, .dot-control:hover {
+.left-control:hover,
+.right-control:hover,
+.dot-control:hover {
   -webkit-transform: scale(2);
           transform: scale(2);
   -webkit-transition: all 0.3s;
@@ -668,6 +714,14 @@ a {
   line-height: 135%;
   color: #616161;
   height: 100%;
+  position: relative;
+}
+
+.error {
+  color: tomato;
+  font-style: italic;
+  margin-left: 50%;
+  opacity: 0;
 }
 
 #uname,
