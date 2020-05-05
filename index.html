@@ -203,19 +203,24 @@
             </div>
           </div>
           <div class="contacts-right">
+          
+            <span class="error1 error">Заполните имя</span>
             <input type="text" name="uname" id="uname" placeholder="Ваше имя" />
+            <span class="error2 error">Заполните e-mail</span>
             <input
               type="email"
               name="email"
               id="email"
               placeholder="Ваш e-mail"
             />
+            <span class="error3 error">Заполните текст сообщения</span>
             <textarea
               name="msg"
               id="msg"
               placeholder="Сообщение"
             ></textarea>
-            <button id="submit" name="submit" type="submit">ОТПРАВИТЬ</button>
+            <button id="submit" name="submit" type="submit" disabled>ОТПРАВИТЬ</button>
+          
           </div>
         </div>
 
@@ -248,8 +253,6 @@
     </div>
     <script
       src="https://code.jquery.com/jquery-3.5.0.min.js"
-      integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ="
-      crossorigin="anonymous"
     ></script>
     <script src="js/anime.min.js"></script>
     <script src="js/slick.min.js"></script>
